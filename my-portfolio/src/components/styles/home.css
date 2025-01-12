@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Main Container */
+.main_caintaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  padding-top: 20px;
+  height: 100vh;
+  background-color:  #1B1B1B;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Box */
+.box h1 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.box h2 {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  margin-bottom: 1rem;
+  color: #A0A05B;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box p {
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  color: white;
+  font-family: cursive;
+}
+
+/* CV Box */
+.cv_box {
+  background-color: #3F8E00;
+  color: white;
+  padding: 0.7rem 2rem;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5rem;
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cv_box:hover {
+  box-shadow: 0 6px 12px rgba(63, 142, 0, 0.5);
+}
+
+/* Profile Image */
+
+.picter_contanier{
+  padding: 5rem;
+}
+.picter_contanier img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.picter_contanier img:hover {
+  box-shadow: 0 6px 12px rgba(63, 142, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* Social Media Links */
+.social-media-links1 {
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure the icons wrap properly on small screens */
+}
+
+.social-icon1 {
+  font-size: 1.8rem; /* Increase icon size */
+  color: #fff;
+  margin: 10PX;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon1:hover {
+  color: #3F8E00; /* Green hover color */
+  transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .main_caintaner {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .content {
+      text-align: left;
+      max-width: 50%;
+  }
+
+  .picter_contanier {
+      width: 40%;
+      height: auto;
+      
+  }
+
+  .social-media-links1 {
+      margin-top: 30px;
+  }
+}
+@media (max-width: 450px){
+  .picter_contanier {
+    display: none;
+    
+}
+}

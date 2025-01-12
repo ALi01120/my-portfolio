@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Get in Touch Container */
+.get-in-touch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    height: 110vh;
+    text-align: center;
+}
+
+.get-in-touch-container h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Form Styling */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #3F8E00;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #3F8E00;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #4CAF50;
+}
+
+/* Form Status Message */
+.form-status {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #3F8E00;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .get-in-touch-container {
+        padding: 80px 40px;
+    }
+
+    .contact-form {
+        max-width: 700px;
+    }
+
+    .input-group label {
+        font-size: 1.4rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .get-in-touch-container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .input-group label {
+        font-size: 1rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}

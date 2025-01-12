@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Service Container */
+.service-container {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+.service-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 20px;
+    color: #444;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.service-description {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #666;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Service Cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual Service Card */
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title */
+.service-card-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Card Text */
+.service-card-text {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .service-cards {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .service-title {
+        font-size: 2.2rem;
+    }
+
+    .service-description {
+        font-size: 1.1rem;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card-title {
+        font-size: 1.4rem;
+    }
+
+    .service-card-text {
+        font-size: 0.9rem;
+    }
+}
